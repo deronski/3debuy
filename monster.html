@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>3D- EBUY</title>
+  <link href="images/immersive.png" rel="icon">
+  <link href="images/immersive.png" rel="apple-touch-icon">
+  <script type="module" src="assets/js/model-viewer.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="assets/css/styles1.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="headr">
+    <div id="infoContainer1">
+      <button onclick="window.location.href='index.html'">Back</button>
+ 
+      </button>
+      <br/>
+        <h1><b>Carnivorous Plants: Nature's Predators</b></h1><br/>
+        <h3>
+            <p> 
+              In the realm of plant kingdom, carnivorous plants stand out as extraordinary predators that have evolved unique mechanisms to capture and consume insects and other small organisms. These captivating flora have intrigued scientists and nature enthusiasts for centuries. Let us delve into the world of carnivorous plants and explore the wonders they hold.
+<br/><br/>
+              <b>Adaptations for Survival:</b><br/>
+              Carnivorous plants typically inhabit nutrient-poor environments such as bogs, swamps, and other wetlands. 
+              Their carnivorous nature is a remarkable adaptation to compensate for the lack of essential nutrients like nitrogen and phosphorous. 
+              Through evolutionary processes, these plants have developed specialized structures and mechanisms to lure, capture, and digest their prey.
+<br/><br/>
+             <b> Clever Trapping Mechanisms:</b><br/>
+Carnivorous plants employ various trapping mechanisms, each tailored to their specific environment and prey. For instance,
+the Venus flytrap (Dionaea muscipula) has modified leaves that snap shut when triggered by sensitive hairs, trapping insects within its grasp. 
+The pitcher plant (Nepenthes spp.) features a modified leaf with a deep pitcher-like structure, filled with digestive enzymes, where unsuspecting insects drown and are gradually dissolved.
+
+Once caught, the plant slowly curls its leaves around the prey, immobilizing and subsequently digesting it.
+<br/>
+<br/>
+<b>Conservation and Threats:</b><br/>
+Despite their fascinating nature, many carnivorous plant species are currently facing threats to their survival. Habitat destruction, pollution, and overcollection by plant enthusiasts pose significant challenges to their conservation. Efforts are being made to protect these extraordinary plants through conservation projects, the establishment of protected areas, and raising awareness about their importance in the natural world.
+<br/><br/>
+<b>Conclusion:</b><br/>
+Carnivorous plants have captured the imagination of nature enthusiasts and scientists alike with their astonishing adaptations. Their clever trapping mechanisms and digestive processes have allowed them to thrive in nutrient-deficient habitats while providing ecological benefits to their surroundings.
+ As we continue to explore and appreciate the wonders of these remarkable plants, it is crucial to ensure their conservation and preservation for future generations to marvel at their unique existence.
+</p></h3>
+  </div>
+    <!-- <model-viewer> HTML element -->
+     <model-viewer id="hotspot-camera-view-demo" src="assets/3D_assets/monster_plant.glb" loading="eager" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="none" shadow-intensity="1" exposure="1" 
+     autoplay camera-orbit="1169deg 87.03deg 1150m" field-of-view="30deg" camera-target="-14.47m 262.3m 14.71m">
+      <div class="progress-bar hide" slot="progress-bar"  interpolation-decay="200" environment-image="images/heaven.jpeg"min-camera-orbit= "auto auto 5%" >
+    
+      <button class="annotation"  data-position="-0.911765529124114105m 1.5376444287230746m 0.12761465352696633m"
+      data-normal="-0.7762312199115998m 0.4483419910085474m -0.44323193965805463m" data-visibility-attribute="visible"
+      data-orbit="-133.3deg 83.18deg 3.794m" data-target="0.2255m 0.8997m -0.05m">
+         <div class="">Reset</div>
+ 
+      </button>
+    
+    </model-viewer>  
+    </header>
+    <script type="module">
+  const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+  const annotationClicked = (annotation) => {
+    let dataset = annotation.dataset;
+    modelViewer2.cameraTarget = dataset.target;
+    modelViewer2.cameraOrbit = dataset.orbit;
+    modelViewer2.fieldOfView = '30deg';
+  }
+
+  modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+    hotspot.addEventListener('click', () => annotationClicked(hotspot));
+  });
+</script>
+<style type="text/css">
+  .Hotspot {
+      background: #fff;
+      border-radius: 4px;
+      border: none;
+      box-sizing: border-box;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-family: Futura, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      max-width: 128px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+   
+</style>
+
+    <script src="assets/js/script1.js"></script>
+    <script src="assets/js/skeleton.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+  </body>
+</html>

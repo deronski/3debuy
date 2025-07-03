@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>3D- EBUY</title>
+  <link href="images/immersive.png" rel="icon">
+  <link href="images/immersive.png" rel="apple-touch-icon">
+  <script type="module" src="assets/js/model-viewer.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="assets/css/styles1.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="headr">
+    <div id="infoContainer1">
+      <button onclick="window.location.href='index.html'">Back</button>
+ 
+      </button>
+      <br/>
+        <h1><b>Snails: Nature's Slow Wonders</b></h1><br/>
+        <h3>
+            <p> 
+              In a world that often values speed and efficiency, there is a small group of creatures that defy the norms. They move at a pace that may seem inconceivable in today's fast-paced society. We're talking about snails - those humble gastropods that have been around for millions of years, quietly inhabiting our gardens, forests, and even our aquariums. While they may not capture our attention like the cheetah or the hummingbird, snails possess an intriguing charm that warrants a closer look.
+<br/><br/>
+One of the most striking features of snails is their unique shell. Serving as both a protective home and a shield against predators, the shell is an integral part of a snail's existence. It grows with the snail, spiraling outward in a mesmerizing pattern. The diversity of shell shapes and colors across different snail species is astonishing, ranging from sleek and conical to ornate and spiral. These shells are not just aesthetically pleasing but also functional, providing structural support and maintaining the snail's body moisture.
+<br/><br/>
+When it comes to mobility, snails are in a class of their own. Their slow and deliberate movement has become synonymous with patience and perseverance. Despite their leisurely pace, snails are remarkably adaptable creatures, capable of navigating a variety of terrains. Using their muscular foot, they glide along a thin trail of mucus, which reduces friction and aids their locomotion. This slimy secretion may be seen as a nuisance by some, but it's a vital tool for snails to explore their environment while conserving energy.
+<br/><br/>
+Despite their humble reputation, snails have captured the attention of researchers and enthusiasts alike. Scientists study their unique abilities, such as self-healing and regenerative properties, with hopes of uncovering valuable insights for human medicine. Meanwhile, hobbyists find joy in observing and caring for these intriguing creatures in their homes and gardens.
+<br/><br/>
+So, the next time you encounter a snail during a leisurely walk or while tending to your garden, take a moment to appreciate their beauty and resilience. They may be small and slow, but within their seemingly simple existence lies a world of complexity and wonder. Snails remind us that life's pace is not always measured in seconds and minutes but in the quiet moments of exploration and adaptation.
+</p></h3>
+  </div>
+    <!-- <model-viewer> HTML element -->
+     <model-viewer id="hotspot-camera-view-demo" src="assets/3D_assets/snail.glb" loading="eager" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="none" shadow-intensity="1" exposure="1" 
+     autoplay camera-orbit="0deg 75deg 0.3889m" field-of-view="30deg" camera-target="-0.02m 0.04738m 0m">
+      <div class="progress-bar hide" slot="progress-bar"  interpolation-decay="200" environment-image="images/heaven.jpeg" min-camera-orbit= "auto auto 5%"  >
+    
+      <button class="annotation"  data-position="-0.911765529124114105m 1.5376444287230746m 0.12761465352696633m"
+      data-normal="-0.7762312199115998m 0.4483419910085474m -0.44323193965805463m" data-visibility-attribute="visible"
+      data-orbit="-133.3deg 83.18deg 3.794m" data-target="0.2255m 0.8997m -0.05m">
+         <div class="">Reset</div>
+ 
+      </button>
+    
+    </model-viewer>  
+    </header>
+    <script type="module">
+  const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+  const annotationClicked = (annotation) => {
+    let dataset = annotation.dataset;
+    modelViewer2.cameraTarget = dataset.target;
+    modelViewer2.cameraOrbit = dataset.orbit;
+    modelViewer2.fieldOfView = '30deg';
+  }
+
+  modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+    hotspot.addEventListener('click', () => annotationClicked(hotspot));
+  });
+</script>
+<style type="text/css">
+  .Hotspot {
+      background: #fff;
+      border-radius: 4px;
+      border: none;
+      box-sizing: border-box;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-family: Futura, Helvetica Neue, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      max-width: 128px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+   
+</style>
+
+    <script src="assets/js/script1.js"></script>
+    <script src="assets/js/skeleton.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+  </body>
+</html>

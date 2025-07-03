@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Cycle</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <!-- Favicons -->
+  <link href="images/immersive.png" rel="icon">
+  <link href="images/immersive.png" rel="apple-touch-icon">
+
+      <!-- bootstrap css -->
+      <script type="module" src="assets/js/model-viewer.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="assets/css/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="assets/css/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="assets/css/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700,800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="assets/css/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section header_bg">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" class="logo"><img src="images/Bikes.png"  width="50px" height="40px"></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+          
+            </div>
+            <div id="main">
+              
+            </div>
+         </nav>
+         <!-- banner section start -->
+         <div class="banner_section layout_padding">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-7">
+                              <model-viewer id="hotspot-demo" src="assets/3D_assets/bike.glb"
+                              ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1.16"
+                              environment-image="images/music_hall_01_1k.hdr" camera-orbit="-174.9deg 79.87deg 6.585m"
+                              field-of-view="20.26deg" min-camera-orbit="auto auto 2.185m" min-field-of-view="16.26deg"
+                              exposure="1.24" autoplay camera-target="0.17m 0.59m 1.13m" interpolation-decay="200">
+                              <button class="Hotspot" slot="hotspot-1"
+                                 data-position="0.18106230635618298m 0.32095082745720305m -0.07595242440511935m"
+                                 data-normal="-0.14869234938414277m -0.4599466743597156m -0.87540827159678m"
+                                 data-orbit="-182.2deg 81.12deg 3.911m" data-target="0.25m 0.1m 2.67m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Pedal</div>
+                              </button><button class="Hotspot" slot="hotspot-2"
+                                 data-position="0.6344776966091115m 0.5883138520047964m -0.023089208445955745m"
+                                 data-normal="0.002240728102193787m 0.01459834749324593m -0.999890927745641m"
+                                 data-orbit="-223.4deg 85.68deg 4.689m" data-target="0.23m 0.5m 2.36m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Tyre</div>
+                              </button><button class="Hotspot" slot="hotspot-3"
+                                 data-position="-0.2425081381095023m 0.9873216476946608m -0.007416933607498505m"
+                                 data-normal="-0.1755955575590299m 0.08309452151020545m -0.9809492854681753m"
+                                 data-orbit="-54.06deg 52.01deg 3.891m" data-target="0.71m 0.23m -0.47m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Front Set</div>
+                              </button><button class="Hotspot" slot="hotspot-4"
+                                 data-position="0.35153110293494305m 0.9355027659580236m -0.04082000401515783m"
+                                 data-normal="-0.3519568015098719m 0.22083670928139962m -0.9095919731971602m"
+                                 data-orbit="-155.9deg 22.57deg 3.845m" data-target="0.19m -0.53m 1.24m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Saddle</div>
+                              </button><button class="Hotspot" slot="hotspot-5"
+                                 data-position="-0.08328774003275341m 0.7665322390597133m -0.03520634295217884m"
+                                 data-normal="-0.0069334635443521545m -0.0027927174538980868m -0.9999720635160273m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Frame</div>
+                              </button>
+                              <div class="progress-bar hide" slot="progress-bar">
+                                 <div class="update-bar"></div>
+                              </div>
+                           </model-viewer>
+                           <script type="module">
+                              const modelViewer2 = document.querySelector("#hotspot-demo");
+                              const annotationClicked = (annotation) => {
+                                 let dataset = annotation.dataset;
+                                 modelViewer2.cameraTarget = dataset.target;
+                                 modelViewer2.cameraOrbit = dataset.orbit;
+                                 modelViewer2.fieldOfView = '40deg';
+                              }
+
+                              modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+                                 hotspot.addEventListener('click', () => annotationClicked(hotspot));
+                              });
+                           </script>
+                             
+                             
+                           </div>
+                           <div class="col-md-5">
+                              <h1 class="banner_taital">Cycles</h1>
+                              <p class="banner_text">Welcome to our new model cycle website! We are excited to provide you with the latest and greatest in cycling technology. Our mission is to help cyclists of all levels find the perfect bike for their needs and preferences </p>
+                            
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-7">
+                              <div class="best_text">Best</div>
+                              <div class="image_1"><img src="images/img-1.png"></div>
+                           </div>
+                           <div class="col-md-5">
+                              <h1 class="banner_taital">New Model Cycle</h1>
+                              <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content </p>
+                              <div class="contact_bt"><a href="contact.html">Shop Now</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-7">
+                              <div class="best_text">Best</div>
+                              <div class="image_1"><img src="images/img-1.png"></div>
+                           </div>
+                           <div class="col-md-5">
+                              <h1 class="banner_taital">New Model Cycle</h1>
+                              <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content </p>
+                              <div class="contact_bt"><a href="contact.html">Shop Now</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- cycle section start -->
+      <div class="cycle_section layout_padding">
+         <div class="container">
+            <h1 class="cycle_taital">Our cycle</h1>
+            <p class="cycle_text">We offer a wide variety of bikes for different types of cycling, such as road, mountain, and hybrid.  </p>
+            <div class="cycle_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="box_main">
+                        <h6 class="number_text">01</h6>
+                        <div class="image_2">
+
+                           <div style="width: 100%; height: 100%; margin: 0;"> 
+                              <iframe id="bike" title="New swiftXR Project" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr camera; midi; encrypted-media"  xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%" src="https://bike-visualizer.swiftxr.app"> 
+                              </iframe>
+                          </div>
+                          <!-- <model-viewer  id="bike" src="assets/3D_assets/bike2.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls shadow-intensity="1" environment-image="images/music_hall_01_1k.hdr" camera-orbit="364.1deg 89.49deg 5.032m" field-of-view="30deg" auto-rotate min-camera-orbit="auto auto 5.032m" min-field-of-view="30deg">
+                              <div class="progress-bar hide" slot="progress-bar">
+                                  <div class="update-bar"></div>
+                              </div>
+                              <button slot="ar-button" id="ar-button">
+                                  View in your space
+                              </button>
+                            
+                          </model-viewer>-->
+                          </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="cycles_text">Detailed Product information</h1>
+                     <p class="lorem_text">Each bike model has a dedicated page with detailed specifications, photos, and customer reviews. You can easily compare different models and find the one that fits your budget and style.</p>
+                     <div class="btn_main">
+                        <div class="buy_bt"><a href="#">Buy Now</a></div>
+                        <h4 class="price_text">Price <span style=" color: #f7c17b">₦</span> <span style=" color: #325662">150,000</span></h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="cycle_section_3 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <h1 class="cycles_text">Customizable Options</h1>
+                     <p class="lorem_text">We understand that every cyclist has unique needs and preferences. That's why we offer customizable options for many of our bike models, such as frame size, wheel size, and color. You can build your dream bike from scratch and have it delivered to your doorstep.</p>
+                     <div class="btn_main">
+                        <div class="buy_bt"><a href="#">Buy Now</a></div>
+                        <h4 class="price_text">Price <span style=" color: #f7c17b">₦</span> <span style=" color: #325662">150,000</span></h4>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="box_main_3">
+                        <h6 class="number_text_2">02</h6>
+                        <div class="image_2" style="width:90%; margin-bottom:40%"><img src="images/custom_bike.webp"></div>
+                     
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="cycle_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="box_main_3">
+                        <h6 class="number_text_2">03</h6>
+                        <div class="image_2" style="width:130%; margin-bottom:40%"><img src="images/poster_bike.webp"></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="cycles_text">Expert Advice</h1>
+                     <p class="lorem_text">Our team of cycling experts is always ready to help you choose the right bike. We can provide you with personalized recommendations based on your cycling goals, experience, and budget. We also have a blog section with tips and advice on cycling gear, training, and maintenance.</p>
+                     <div class="btn_main">
+                        <div class="buy_bt"><a href="#">Buy Now</a></div>
+                        <h4 class="price_text">Price <span style=" color: #f7c17b">₦</span> <span style=" color: #325662">150,000</span></h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+      </div>
+      <!-- cycle section end -->
+   
+   </body>
+</html>

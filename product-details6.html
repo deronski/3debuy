@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Product Details</title>
+  <script type="module" src="assets/js/model-viewer.min.js"></script>
+  <style>
+    model-viewer {
+      width: auto;
+      height: 500px;
+      margin: none;
+      background-color: rgba(180, 178, 178, 0);
+    }
+  </style>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/immersive.png" rel="icon">
+  <link href="images/immersive.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style1.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">3D-<span>EBUY</span></a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="#portfolio">Products</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade-up">
+    <button onclick="window.location.href='index.html'">Back</button>
+     <div>
+            <h5>Car Body Color</h5>
+            <div class="controls" id="color-controls">
+                <button data-color="#ff0000">Red</button>
+                <button data-color="#00ff00">Green</button>
+                <button data-color="#0000ff">Blue</button>
+            </div>
+            <h5>Rim Color</h5>
+            <div class="controls" id="color-controls1">
+                <button data-color="#000000">Black</button>
+                <button data-color="#ffffff">white</button>
+            </div>
+        </div>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+
+              <model-viewer id="hotspot-camera-view-demo" src="assets/3D_assets/car.glb" loading="eager" camera-controls touch-action="none"  ar ar-modes="webxr scene-viewer quick-look" poster="poster.webp"
+        shadow-intensity="1" camera-orbit="-138.9deg 73.68deg 9.789m" field-of-view="45deg" interpolation-decay="200"
+        min-camera-orbit="auto auto 5%" environment-image="images/music_hall_01_1k.hdr">
+        <button class="Hotspot" slot="hotspot-1"
+            data-position="-0.13362305510450057m 0.5017169807008958m -2.320674044677208m"
+            data-normal="-0.0986658258568322m 0m -0.9951206232452373m" data-orbit="-180.5deg 92.74deg 5.309m"
+            data-target="-0.13m 0.6317m 1.71013m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Logo</div>
+        </button><button class="Hotspot" slot="hotspot-2"
+            data-position="0.7152269373901579m 0.6849191541239749m -2.0403472027942415m"
+            data-normal="0.42004508407750724m 0.795571643226713m -0.43660953704181454m"
+            data-orbit="-191.6deg 89.78deg 5.421m" data-target="-0.15m 0.6317m 1.8m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Lights</div>
+        </button><button class="Hotspot" slot="hotspot-3"
+            data-position="-1.0629296343936705m 0.9917795383680903m 0.03009694724051748m"
+            data-normal="-0.8005541267160837m 0.35155154806023375m -0.4853087669250388m"
+            data-orbit="-4.026deg 84.1deg 5.309m" data-target="-0.9824m 0.788m -3.24m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Mirror</div>
+        </button><button class="Hotspot" slot="hotspot-4"
+            data-position="-0.024607226551718542m 1.135826683738925m 0.06379065225930451m" data-normal="0m 0m 1m"
+            data-orbit="0.9713deg 80.83deg 5.309m" data-target="-0.06m 0.54m -3.9m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Front Mirror</div>
+        </button><button class="Hotspot" slot="hotspot-5"
+            data-position="-0.45958852955236623m 0.8566547299121063m -0.062489594965561654m"
+            data-normal="0.13281219307773118m 0.44492592427891725m 0.8856646336364769m"
+            data-orbit="1.22deg 79.92deg 5.309m" data-target="-0.75m 0.18m -4.35m" data-orbit="3.479deg 64.53deg 5.309m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Steering</div>
+        </button><button class="Hotspot" slot="hotspot-6"
+            data-position="-0.008253913027282511m 0.6235715614635307m -0.1746219408509601m"
+            data-normal="0.001967195156732021m 0.4858499940534355m 0.8740399953214338m"
+            data-orbit="-2.383deg 69.84deg 5.309m" data-target="0.06m -0.82m -4.02m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Radio</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+
+        </div>
+       
+
+
+    </model-viewer>
+
+    <script type="module">
+        const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+        const annotationClicked = (annotation) => {
+            let dataset = annotation.dataset;
+            modelViewer2.cameraTarget = dataset.target;
+            modelViewer2.cameraOrbit = dataset.orbit;
+
+        }
+
+        modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+            hotspot.addEventListener('click', () => annotationClicked(hotspot));
+        });
+    </script>
+
+    <style type="text/css">
+        .view-button {
+            background: #fff;
+            border-radius: 4px;
+            border: none;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: rgba(0, 0, 0, 0.8);
+            display: block;
+            font-family: Futura, Helvetica Neue, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            max-width: 128px;
+            overflow-wrap: break-word;
+            padding: 0.5em 1em;
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    </style>
+    <script>
+        const modelViewerColor = document.querySelector("model-viewer#hotspot-camera-view-demo");
+
+        document.querySelector('#color-controls').addEventListener('click', (event) => {
+            const colorString = event.target.dataset.color;
+            const material = modelViewerColor.model.materials[7];
+            material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+        });
+    </script>
+    <script>
+        const modelViewerColor1 = document.querySelector("model-viewer#hotspot-camera-view-demo");
+
+        document.querySelector('#color-controls1').addEventListener('click', (event) => {
+            const colorString1 = event.target.dataset.color;
+            const material1 = modelViewerColor.model.materials[1];
+            material1.pbrMetallicRoughness.setBaseColorFactor(colorString1);
+        });
+    </script>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Automobile</h3>
+              <ul>
+                <li><strong>Category</strong>: Vehicle</li>
+                <li><strong>Brand</strong>: Mercedes</li>
+                <li><strong>Price</strong>: ₦5,000,000</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Automobile</h2>
+              <p>
+                Experience the epitome of luxury and performance with the stunning Mercedes. Meticulously crafted to
+                embody
+                elegance, innovation, and unparalleled driving pleasure, this extraordinary vehicle sets new standards
+                in automotive
+                excellence.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Product Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Enter your E-mail to recieve our Newsletter</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>3D-<span>EBUY</span></h3>
+            <p>
+            DEREK <br>
+              Lagos<br>
+              Nigeria <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
